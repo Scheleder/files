@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Berry - Gerenciador de Backups</title>
+
+   
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+	  
+
+.input-group .input-group-text {
+    width: 180px;
+}
+    </style>
+
+    
+
+  </head>
+  <body class="d-flex flex-column h-100">
+
+
+  <div class="container">
+    <br>
+    <p class="lead">Preencha todos os campos...</p>
+	
+<form action="send_file.php" method="POST" enctype="multipart/form-data">
+  
+<!--   <div class="input-group mb-3">
+    <span class="input-group-text">Seu Nome</span>
+    <input type="text" class="form-control" name="user">
+  </div> -->
+  
+<div class="input-group mb-3">
+    <span class="input-group-text">Linha</span>
+  <select class="form-control" name="linha">
+    <option value='SJP05'>SJP05</option>
+    <option value='SJP06'>SJP06</option>
+    <option value='SJP07'>SJP07</option>
+    <option value='SJP08'>SJP08</option>
+	<option value='SJP09'>SJP09</option>
+    <option value='SJP11'>SJP11</option>
+    <option value='SJP13'>SJP13</option>
+    <option value='SJP15'>SJP15</option>
+	<option value='SJP16'>SJP16</option>
+  </select>
+</div>
+  
+  <div class="input-group mb-3">
+    <span class="input-group-text">Equipamento</span>
+  <select class="form-control" name="eqpto">  
+    <option value='DRIVE'>DRIVE</option>
+	 <option value='ESQUEMA'>ESQUEMA</option>
+    <option value='IHM'>IHM</option>
+	<option value='MANUAL'>MANUAL</option>
+	<option value='OUTRO'>OUTRO</option>
+	<option value='PLC'>PLC</option>
+    <option value='SCANNER'>SCANNER</option>
+	<option value='SICK'>SICK</option>
+   </select>
+</div>
+
+  <div class="input-group mb-3">
+     <span class="input-group-text">Local do Equipamento</span>
+    <input type="text" class="form-control" name="local">
+  </div>
+  
+  <div class="input-group mb-3">
+  <span class="input-group-text">Observações</span>
+  <textarea type="text" class="form-control" rows="5" name="obs"></textarea>
+</div>
+
+<div class="input-group mb-3">
+  <input class="form-control form-control-lg" type="file" name="arquivo">
+</div>
+  <div class="d-grid gap-2">
+  <button class="btn btn-lg btn-outline-success btn-block" type="submit">Enviar Arquivo</button>
+
+</div>
+  
+</form>
+   
+  </div>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
